@@ -73,7 +73,7 @@ const file = {
 dagCBOR.util.serialize(file, (err, serialized) => {})
 
 
-ipld.util.deserialize(serialize, (err, node) => {
+dagCBOR.util.deserialize(serialize, (err, node) => {
   if (err) {
     throw err
   }
